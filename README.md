@@ -75,8 +75,8 @@ erDiagram
 
 ```text
 .
-├── estructura.sql          # DDL, ingesta, ETL y QA
-├── analisis.sql            # Bloques de consulta respondiendo al problema de negocio
+├── estructura.sql # DDL, ingesta, ETL y QA
+├── analisis.sql # Bloques de consulta respondiendo al problema de negocio
 ├── README.md
 └── data/
     └── Customer_support_data.csv
