@@ -94,7 +94,7 @@ FROM stg_soporte s
 JOIN categorias c ON c.nombre = TRIM(s.category)
 ORDER BY 1, 2;
 
--- Asunción: El nombre de agente funciona como primary business key.
+-- Asunción: El nombre de agente funciona como primary key.
 INSERT INTO agentes (nombre, supervisor, manager, antiguedad, turno)
 SELECT DISTINCT TRIM(agent_name), TRIM(supervisor), TRIM(manager), TRIM(tenure_bucket), TRIM(agent_shift)
 FROM stg_soporte
